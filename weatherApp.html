@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project</title>
+
+    <style>
+
+        body{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .weatherForm{
+            display: flex;
+            margin: 25px;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(hsla(226, 97%, 61%, 0.5), rgba(255, 166, 0, 0.685));
+            min-width: 450px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.534);
+        }
+        .cityInput{
+            border: 2px solid hsla(0, 0%, 0%, 0.541);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .displayEmoji{
+            font-size: 7rem;
+            margin: 0;
+        }
+        .cityDisplay{
+            font-size: 4rem;
+        }
+        .tempDisplay{
+            margin: 0;
+            font-size: 4rem;
+
+        }
+        .humidityDisplay{
+            margin: 10;
+            font-size: 2rem;
+
+
+        }
+        .descDisplay{
+            font-style: italic;
+            font-size: 2rem;
+            margin:10px;
+        }
+        .errorDisplay{
+            font-size: 1.5rem;
+            
+        }
+        button{
+            background-color: hsl(120, 41%, 49%);
+            color: white;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            border: none;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background-color: hsl(120, 41%, 39%);
+
+
+        }
+
+            
+
+    </style>
+</head>
+<body>
+
+  
+        <form class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Enter City">
+            <button type="submit">Get Weather</button>
+        </form>
+    
+        <div class="card" style="display: none;">
+            <!-- <h1 class="cityDisplay">Manila</h1>
+            <p class="tempDisplay">60.3 C</p>
+            <p class="humidityDisplay">Humidity: 81%</p>
+            <p class="descDisplay">overcast clouds</p>
+            <p class="displayEmoji">☀</p>
+            <p class="errorDisplay">Please Enter A City</p> -->
+        </div>
+ 
+   
+  
+        <script src="js/weatherApp.js"></script>
+    
+</body>
+</html>
